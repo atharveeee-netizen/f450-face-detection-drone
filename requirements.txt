@@ -1,0 +1,4 @@
+# On Raspberry Pi OS, prefer the apt packages instead of pip:
+#   sudo apt install python3-opencv python3-picamera2
+opencv-python>=4.5
+numpy>=1.21
