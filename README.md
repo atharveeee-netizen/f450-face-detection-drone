@@ -1,5 +1,11 @@
 # F450 Quadcopter with Onboard Face Detection
 
+![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%203B%2B-A22846?logo=raspberrypi&logoColor=white)
+![Flight Controller](https://img.shields.io/badge/flight%20controller-Pixhawk%202.4.8%20%2F%20ArduCopter-FF6600)
+![Python](https://img.shields.io/badge/python-3.7%2B-3776AB?logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/vision-OpenCV-5C3EE8?logo=opencv&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 A university drone project: a hand-built **F450 quadcopter** running a **Pixhawk 2.4.8** flight controller, with a **Raspberry Pi 3B+ companion computer** performing **real-time face detection** through a Pi Camera. The drone features GPS-assisted flight modes, long-range radio telemetry, 3D-printed structural parts, and a measured flight endurance of **~18 minutes**.
 
 ![Pixhawk and GPS integration](media/02-pixhawk-gps-integration.jpg)
