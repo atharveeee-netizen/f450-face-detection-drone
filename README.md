@@ -26,7 +26,7 @@ A university drone project: a hand-built **F450 quadcopter** running a **Pixhawk
 
 ## System Architecture
 
-```
+```text
    FlySky FS-i6 transmitter                Ground station (Mission Planner)
         (2.4 GHz RC)                                 │
              │                              telemetry radio link
@@ -65,6 +65,15 @@ The flight stack (stabilisation, GPS position hold, RTL, failsafes) runs entirel
 
 Full parts list with costs: **[docs/BOM.md](docs/BOM.md)**
 
+## Documentation
+
+| Doc | Contents |
+|---|---|
+| [docs/BOM.md](docs/BOM.md) | Full bill of materials with costs (~₹29,000 total) |
+| [docs/ASSEMBLY.md](docs/ASSEMBLY.md) | Step-by-step build guide + complete wiring map |
+| [docs/SETUP_CALIBRATION.md](docs/SETUP_CALIBRATION.md) | ArduCopter setup, calibrations, failsafes, Pi configuration |
+| [docs/FLIGHT_TESTING.md](docs/FLIGHT_TESTING.md) | Test campaign, results, lessons learned |
+
 ## Face Detection
 
 The onboard vision system lives in [src/face_detection.py](src/face_detection.py). It:
@@ -90,7 +99,7 @@ python3 src/face_detection.py --save-dir detections/   # save detection snapshot
 
 ## Repository Structure
 
-```
+```text
 ├── README.md              ← you are here
 ├── docs/
 │   └── BOM.md             ← full bill of materials with costs
