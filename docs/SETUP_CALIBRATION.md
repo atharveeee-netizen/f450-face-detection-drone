@@ -2,7 +2,7 @@
 
 How the Pixhawk 2.4.8 and Raspberry Pi were configured.
 
-## 1. Flight Controller — ArduCopter via Mission Planner
+## 1. Flight Controller - ArduCopter via Mission Planner
 
 1. Connect the Pixhawk over USB, open **Mission Planner**, and flash the latest stable **ArduCopter** firmware.
 2. Frame class: **Quad**, frame type: **X**.

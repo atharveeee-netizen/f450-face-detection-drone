@@ -99,8 +99,8 @@ python3 src/face_detection.py --save-dir detections/   # save detection snapshot
 
 ## 3D-Printed Parts
 
-- **GPS mast mount** — raises the NEO-M8N above the frame, away from ESC/PDB magnetic noise, improving compass health and GPS lock.
-- **Camera mount** — front-mounted bracket for the Pi Camera.
+- **GPS mast mount** - raises the NEO-M8N above the frame, away from ESC/PDB magnetic noise, improving compass health and GPS lock.
+- **Camera mount** - front-mounted bracket for the Pi Camera.
 - Anti-vibration dampers isolate the Pixhawk from motor vibration for cleaner IMU data.
 
 ## Repository Structure

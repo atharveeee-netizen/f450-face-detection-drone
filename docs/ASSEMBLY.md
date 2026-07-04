@@ -5,9 +5,9 @@ Step-by-step record of how the drone was built, from bare frame to flight-ready.
 ## 1. Frame Assembly
 
 1. Bolt the four F450 arms (2 red front, 2 white rear for orientation) to the **bottom PDB plate** using M2.5×6 screws.
-2. Solder the four **30 A ESC** power leads to the PDB pads (⚠ check polarity — red to +, black to −).
+2. Solder the four **30 A ESC** power leads to the PDB pads (⚠ check polarity - red to +, black to −).
 3. Solder the battery lead (XT60) to the PDB main input **through the power module** (see wiring section).
-4. Fit the top plate loosely — final tightening after all wiring is routed.
+4. Fit the top plate loosely - final tightening after all wiring is routed.
 
 ## 2. Motors & Propulsion
 
@@ -27,7 +27,7 @@ Step-by-step record of how the drone was built, from bare frame to flight-ready.
         REAR
 ```
 
-4. Propellers go on **last**, after all calibration: 10×4.5 — normal props on CW motors, "R" (pusher) props on CCW motors.
+4. Propellers go on **last**, after all calibration: 10×4.5 - normal props on CW motors, "R" (pusher) props on CCW motors.
 
 ## 3. Flight Controller
 
@@ -37,14 +37,14 @@ Step-by-step record of how the drone was built, from bare frame to flight-ready.
 ## 4. GPS on 3D-Printed Mast
 
 1. The **u-blox NEO-M8N** sits on a **3D-printed mast mount** (PLA) bolted to the top plate.
-2. The mast raises the GPS/compass ~10 cm above the PDB and ESC wiring — high-current wiring generates magnetic fields that corrupt compass readings; elevation fixed our compass interference warnings.
+2. The mast raises the GPS/compass ~10 cm above the PDB and ESC wiring - high-current wiring generates magnetic fields that corrupt compass readings; elevation fixed our compass interference warnings.
 3. GPS arrow must point **forward**, same direction as the Pixhawk arrow.
 
 ## 5. Vision System (Raspberry Pi 3B+)
 
 1. Mount the **Raspberry Pi 3B+** on the top plate with standoffs/foam tape, clear of the Pixhawk.
 2. Connect the **Pi Camera** ribbon to the CSI port; mount the camera in the 3D-printed front bracket.
-3. Power the Pi from a **5 V BEC** (ESC BEC line or separate UBEC from the PDB). The Pi 3B+ draws up to ~1.5 A under vision load — don't power it from the Pixhawk rail.
+3. Power the Pi from a **5 V BEC** (ESC BEC line or separate UBEC from the PDB). The Pi 3B+ draws up to ~1.5 A under vision load - don't power it from the Pixhawk rail.
 
 ## 6. Wiring Map
 
@@ -52,7 +52,7 @@ Step-by-step record of how the drone was built, from bare frame to flight-ready.
 |---|---|---|
 | Battery (XT60) | Power module → PDB | Power module measures voltage/current |
 | Power module 6-pin | Pixhawk `POWER` | Powers the FC + battery telemetry |
-| ESC signal wires ×4 | Pixhawk `MAIN OUT 1–4` | Match motor numbers above |
+| ESC signal wires ×4 | Pixhawk `MAIN OUT 1-4` | Match motor numbers above |
 | FS-iA6B receiver | Pixhawk `RCIN` | PPM/iBUS output from receiver |
 | NEO-M8N GPS (6-pin) | Pixhawk `GPS` | UART serial |
 | NEO-M8N compass (4-pin) | Pixhawk `I2C` | External compass |

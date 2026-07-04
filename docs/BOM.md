@@ -1,6 +1,6 @@
 # Bill of Materials (BOM)
 
-F450 Quadcopter with Onboard Face Detection — full parts list.
+F450 Quadcopter with Onboard Face Detection - full parts list.
 
 > Prices are approximate Indian hobby-market rates at the time of the build and will vary by vendor.
 
